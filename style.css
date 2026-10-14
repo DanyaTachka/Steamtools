@@ -1,85 +1,9 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial,sans-serif;
-    max-width:900px;
-    margin:20px auto;
-    padding:0 15px;
-
-    display:grid;
-    gap:12px;
-}
-
-.header,
-.hero,
-.about,
-.footer{
-    padding:40px;
-    text-align:center;
-    border:2px dashed #aaa;
-}
-
-.header{
-    background:#dbeafe;
-}
-
-.hero{
-    background:#d1fae5;
-    min-height:120px;
-}
-
-.about{
-    background:#fce7f3;
-    min-height:100px;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:12px;
-    padding:12px;
-    border:2px dashed #60a5fa;
-    background:#eff6ff;
-}
-
-.card{
-    border:2px dashed #93c5fd;
-    padding:8px;
-    background:white;
-
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-}
-
-.image{
-    height:80px;
-    background:#bae6fd;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.card button{
-    background:#0284c7;
-    color:white;
-    border:none;
-    padding:10px;
-    cursor:pointer;
-}
-
-.featured{
-    grid-column:span 2;
-}
-
-.featured .image{
-    height:100px;
-}
-
-.footer{
-    background:#f8fafc;
+.layers {
+    border: 3px solid #ff0000;
+    width: 600px;
+    height: 400px;
+    background-image: url('./imgs/planetary.png;'), url('./imgs/lunar-tour.png'), url(./imgs/cat.png), url('./imgs/Space\ Wade.jpg');
+    background-size: 100px, 100px, 100px, cover;
+    background-position: center , left center , right top , center ;
+    background-repeat: no-repeat;
 }
